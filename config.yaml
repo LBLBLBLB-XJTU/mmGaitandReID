@@ -1,0 +1,12 @@
+dataset_dir: "dataset"  # 数据集路径
+
+learning_rate: 0.001  # 学习率
+num_epochs: 100  # 训练轮数
+loss_function: "BCEWithLogitsLoss"  # 损失函数
+optimizer: "Adam"  # 优化器
+input_size: 768  # 输入维度 (128 * 6)
+
+model: "PointNet"  # 模型名称,和类名字对应
+model_file: "models.pointnet_model"  # 模型文件（不带.py后缀）
+pointscloud_loader: "load_data"  # 加载器名称，和函数对应
+pointscloud_loader_file: "utils.pointscloud_load"  # 加载器文件（不带.py后缀）
